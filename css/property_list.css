@@ -1,0 +1,184 @@
+/* ============================================================
+   Property List Page Styling
+   ============================================================ */
+
+.filter-bar {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.filter-bar > div, 
+.filter-bar > a {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.filter-bar > div:hover,
+.filter-bar > a:hover {
+    background-color: #f1f5f9;
+    color: #2563eb;
+}
+
+.filter-bar a.active-sort {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.filter-bar img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    opacity: 0.8;
+}
+
+/* Property Card */
+.property-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.05), 0 1px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.property-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+    border-color: #cbd5e1;
+}
+
+.image-container {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover .image-container img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        margin-bottom: 16px;
+    }
+    .image-container img {
+        height: 220px;
+    }
+}
+
+.star-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star-container i {
+    color: #f59e0b;
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.interested-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.interested-container i {
+    color: #ef4444;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.interested-container i:hover {
+    transform: scale(1.2);
+}
+
+.interested-text {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.detail-container {
+    padding: 12px 0 16px;
+}
+
+.property-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.property-address {
+    color: #64748b;
+    font-size: 13.5px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.property-gender img {
+    width: 38px;
+    height: 38px;
+}
+
+.rent-container {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.rent {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.rent-unit {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button-container .btn {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 24px;
+    float: right;
+}
+
+/* No Property */
+.no-property-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 48px 20px;
+    text-align: center;
+    color: #64748b;
+    margin: 40px auto;
+}

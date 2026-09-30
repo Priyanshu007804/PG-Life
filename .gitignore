@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+
+# Local dev
+docker-compose.yml
+production_dump.sql
+.env
+.env.*
+!.env.example

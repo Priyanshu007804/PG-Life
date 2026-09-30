@@ -1,0 +1,72 @@
+/* ============================================================
+   Dashboard Page Styling
+   ============================================================ */
+
+.my-profile {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px !important;
+    margin-top: 24px !important;
+    margin-bottom: 32px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.my-profile h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.profile-img-container {
+    text-align: center;
+}
+
+.profile-img {
+    font-size: 64px;
+    color: #94a3b8;
+    background: #f1f5f9;
+    padding: 24px;
+    border-radius: 50%;
+    border: 3px solid #e2e8f0;
+}
+
+.profile .name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.profile .email, 
+.profile .phone, 
+.profile .college {
+    color: #64748b;
+    font-size: 14.5px;
+    margin-bottom: 4px;
+}
+
+.edit-profile {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #eff6ff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.edit-profile:hover {
+    background: #dbeafe;
+}
+
+/* My Interested Properties Section */
+.my-interested-properties {
+    margin-bottom: 48px;
+}
+
+.my-interested-properties h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}

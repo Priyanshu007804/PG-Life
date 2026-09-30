@@ -1,0 +1,13 @@
+.git
+.gitignore
+*.zip
+*.tar.gz
+.vscode
+.idea
+*.log
+docker-compose.yml
+production_dump.sql
+.agents
+.env
+.env.*
+!.env.example
