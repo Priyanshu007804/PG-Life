@@ -70,6 +70,12 @@ $connected = @mysqli_real_connect(
 );
 
 if (!$connected) {
-    echo "Database connection error: " . mysqli_connect_error();
+    // Return JSON error so API endpoints can parse it properly
+    header('Content-Type: application/json');
+    echo json_encode(array(
+        "success" => false,
+        "message" => "Database connection failed. Please try again later.",
+        "debug" => (getenv('APP_DEBUG') === 'true') ? mysqli_connect_error() : null
+    ));
     exit;
 }

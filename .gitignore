@@ -19,3 +19,5 @@ production_dump.sql
 .env
 .env.*
 !.env.example
+
+docker.md
